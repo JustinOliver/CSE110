@@ -1,3 +1,4 @@
+# Masking Email
 email = input("What is your email address?:")
 lowerEmail = email.lower()
 splitEmail = lowerEmail.split('@')
@@ -5,7 +6,7 @@ astrixEmail = (splitEmail[0][0]) + ("******") + (splitEmail[0][-1])
 joinedEmail = astrixEmail + "@" + splitEmail[1]
 print(joinedEmail)
 
-
+# Masking Phone Number
 number = input("What is your phone number?")
 removeChars = ['+','(', ')', ' ', '-']
 for char in removeChars:
@@ -26,6 +27,5 @@ elif len(number) == 11:
 	newLocalNumber = "+*-" + newLocalNumber
 else:
 	pass
-
 print(newLocalNumber)
 
